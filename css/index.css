@@ -9,7 +9,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: none; 
 }
 blockquote, q {
 	quotes: none;
@@ -163,8 +163,9 @@ footer {
         width: 800px;
     }
     .innovation {
-        text-align: center;
         margin-left: 200px;
+        text-align: center;
+        border-bottom: 1px solid black;
     }
     img#circle {
         display: none;
@@ -178,5 +179,47 @@ footer {
     }
     .subsection2 {
         width: 25%;
+    }
+}
+@media  only screen and (max-width: 500px) {
+    
+    body {
+        max-width: 500px;
+    }
+    header {
+        flex-direction: column-reverse;
+        width: 500px;
+    } 
+        
+    .innovation {
+        margin-left: 100px;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    img#circle {
+        display: none;
+        }
+    .subsection1 {
+        width: 80%;
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+    .middle-img {
+        width: 425px;
+    }
+    .subsection2 {
+        width: 80%;
+        flex-direction: column;
+    }
+    .navigation a {
+        display: block;
+        border:1em grey;
+        width: 100%; 
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+    .logo {
+        width: 100%;
     }
 }
