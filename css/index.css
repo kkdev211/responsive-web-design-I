@@ -187,8 +187,13 @@ footer {
         max-width: 500px;
     }
     header {
-        flex-direction: column-reverse;
         width: 500px;
+        height: 175px;
+        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
     } 
         
     .innovation {
@@ -211,15 +216,18 @@ footer {
         width: 80%;
         flex-direction: column;
     }
-    .navigation a {
-        display: block;
-        border:1em grey;
-        width: 100%; 
+    nav a {
+        display: flex;
         flex-direction: column-reverse;
-        text-align: center;
-        
     }
     .logo {
         width: 100%;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 13em;
+        font-size: 1em;
     }
 }
