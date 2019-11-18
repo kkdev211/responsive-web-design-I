@@ -1,3 +1,238 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none; 
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	box-sizing: border-box;
+	margin: 1px 200px 5px 100px;
+	height: max- max-content; 
+	width: 950px;
+	margin: auto;
+} 
+
+nav {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+.navigation a {
+	text-decoration: none;
+    color: grey;
+}
+nav a img {
+	width: 180%;
+	/*display: inline-block; */
+}
+/*header {
+	width: 100%;
+	padding: 10px 20px 60px 20px;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	padding-top: 60px;
+} */
+header {
+	display: flex;
+    flex-wrap: wrap;
+    width: 1024px;
+    height: 5em;
+    top: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.98);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;	
+}
+
+hr {
+	border-top: 1px solid black;
+	margin-top: 20px;
+}
+.index-button {
+	display: block;
+	width: 180px;
+	height: 30px;
+	font-size: 20px;
+	border: 1px solid black;
+	padding: 5px 20px;
+	margin: 0 auto;
+	margin-top: 30px;
+	/*background-color: white;
+	color: black;
+	border: 2px solid black;
+	padding: 10px 45px;*/ 
+	} 
+.innovation {
+	margin-top: 100px;
+	margin-left: 105px;
+	float: left;
+    font-size: 40px;
+	padding-bottom: 40px;
+	color:black;
+	text-align: center;	
+}
+.logo {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+/*.top-content {
+	width: 100%;
+	margin-left: 30px;
+	margin-top: 35px;
+	
+}*/
+.top-content {
+	flex-direction: row;
+}
+.middle-img {
+	margin-top: 45px;
+	margin-left: 46px;
+}
+.subsection1 {
+	width: 40%;
+	display: inline-block;
+	margin-left: 58px;
+}
+
+.subsection2 {
+	width: 28%;
+	display: inline-block;
+	margin-left: 46px;
+	margin-top: 40px;
+}
+.contact {
+	margin-top: 40px;
+	margin-left: 46px;
+}
+footer {
+	text-align: center;
+	margin-top: 40px;
+}
+
+/* 800px*/
+
+@media  only screen and (max-width: 800px) {
+    body {
+        max-width: 800px;
+    }
+    header {
+        flex-direction: column-reverse;
+        width: 800px;
+    }
+    .innovation {
+        margin-left: 200px;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    img#circle {
+        display: none;
+        }
+    .subsection1 {
+        width: 40%;
+        flex-direction: row;
+    }
+    .middle-img {
+        width: 700px;
+    }
+    .subsection2 {
+        width: 25%;
+    }
+}
+@media  only screen and (max-width: 500px) {
+    
+    body {
+        max-width: 500px;
+    }
+    header {
+        width: 500px;
+        height: 300px;
+        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 1em;
+    } 
+    .innovation {
+        margin-left: 100px;
+        margin-top: 300px;
+        text-align: center;
+        margin-bottom: 1px solid black;
+    }
+    img#circle {
+        display: none;
+        }
+    .subsection1 {
+        width: 80%;
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+    .middle-img {
+        width: 425px;
+    }
+    .subsection2 {
+        width: 80%;
+        flex-direction: column;
+    }
+    nav a {
+        display: flex;
+        flex-direction: column-reverse;
+	    padding: 9px 20px;
+        border-bottom: 1px solid grey;
+        width: 100%;
+        font-size: 20px;
+        
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 1em;
+        font-size: 1em;  
+        width: 500px;   
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;  
+    }
+}
